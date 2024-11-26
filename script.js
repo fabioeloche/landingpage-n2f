@@ -90,7 +90,7 @@ function handleScrollEffect() {
         const adjustedScrollPercentage = Math.max(0, scrollPercentage - offset); // Offset per il ritardo iniziale
 
         // Moltiplicatore per desktop (2) e mobile (1.5)
-        const multiplier = window.innerWidth < 768 ? 4 : 6; // Più lento su mobile
+        const multiplier = window.innerWidth < 768 ? 5 : 9; // Più lento su mobile
         const visibleWordCount = Math.floor(adjustedScrollPercentage * words.length * multiplier); // Calcoliamo quante parole devono essere visibili
 
         // Se la sezione è visibile, inizia a mostrare le parole
@@ -98,7 +98,7 @@ function handleScrollEffect() {
             if (index < visibleWordCount) {
                 setTimeout(() => {
                     span.classList.add('visible'); // Aggiungi la classe visible per rivelare la parola
-                }, 100); // Ritardo uniforme di 200ms per entrambi i dispositivi
+                }, 250); // Ritardo uniforme di 200ms per entrambi i dispositivi
             } else {
                 span.classList.remove('visible'); // Rimuove la classe visible per nascondere la parola
             }
@@ -237,4 +237,27 @@ document.addEventListener("DOMContentLoaded", () => {
     questions.forEach((question) => {
         question.style.display = "block";
     });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observerOptions = {
+        root: null,  // Use the viewport as the container.
+        rootMargin: '0px',
+        threshold: 0.5  // Trigger when 50% of the target is visible.
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When video is visible, trigger the text animation
+                const expenseText = document.querySelector('.new-expense-text');
+                expenseText.style.transform = 'translateY(0)';
+                expenseText.style.opacity = '1';
+            }
+        });
+    }, observerOptions);
+
+    // Target the video container for observation
+    const videoContainer = document.querySelector('.custom-video-frame');
+    observer.observe(videoContainer);
 });

@@ -66,7 +66,7 @@ header .nav-links {
     z-index: 1;
     padding: 2rem;
     width: 90%;
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 10px;
     height: 100%;
     
@@ -92,7 +92,7 @@ header .nav-links {
     line-height: 1.5; /* Altezza della riga */
     color: #ffffff;
     margin: 0;
-    word-spacing: 3px; /* Aggiungi spazi più larghi tra le parole */
+    word-spacing: 0px; /* Aggiungi spazi più larghi tra le parole */
     
 }
 
@@ -720,6 +720,24 @@ body {
     background-position: center;
 }
 
+/* third text that appear*/
+.new-scrolling-expense {
+    width: 100%;
+    height: 50px;  /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;  
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.new-expense-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;  
+    transform: translateY(100%);
+    opacity: 0; /* Start fully transparent */
+    transition: transform 10s ease-out, opacity 10s ease-out; /* Slower transition */
+}
 
 
 
@@ -833,7 +851,7 @@ body {
         height: 100px;
     }
     .custom-video-section {
-        width: 90%;
+        width: 100%;
     }  
 }
 
@@ -937,7 +955,7 @@ body {
         padding: 1rem;
     }
     .custom-video-section {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -1193,24 +1211,33 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #000; /* Sfondo nero */
-    padding: 20px;
+    padding: 10px;
     border: 3px solid #ffa500; /* Bordo arancione */
     border-radius: 10px; /* Angoli arrotondati */
-    margin: 20px auto;
+    margin: 10px auto;
     width: 90%;
     transform: scale(0.3); /* Partenza al 30% */
     opacity: 0; /* Inizialmente invisibile */
     transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Animazione fluida */
+ 
+    margin-bottom: -100px;
 }
 
 /* Contenitore video */
 .custom-video-container {
     position: relative;
     width: 90%;
-    padding-top: 56.25%; /* Rapporto 16:9 */
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
     overflow: hidden;
-    border-radius: 10px; /* Angoli arrotondati */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 0px; /* Eliminate any default top margin */
 }
+
+/* Adjust margins for the elements above the video container */
+.previous-section-class {
+    margin-bottom: -20px; /* Reduce or remove bottom margin of the section above */
+}
+
 
 /* Frame video */
 .custom-video-frame {
