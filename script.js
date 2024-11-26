@@ -90,7 +90,7 @@ function handleScrollEffect() {
         const adjustedScrollPercentage = Math.max(0, scrollPercentage - offset); // Offset per il ritardo iniziale
 
         // Moltiplicatore per desktop (2) e mobile (1.5)
-        const multiplier = window.innerWidth < 768 ? 3 : 5; // Più lento su mobile
+        const multiplier = window.innerWidth < 768 ? 4 : 6; // Più lento su mobile
         const visibleWordCount = Math.floor(adjustedScrollPercentage * words.length * multiplier); // Calcoliamo quante parole devono essere visibili
 
         // Se la sezione è visibile, inizia a mostrare le parole

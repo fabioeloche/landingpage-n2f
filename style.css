@@ -92,7 +92,7 @@ header .nav-links {
     line-height: 1.5; /* Altezza della riga */
     color: #ffffff;
     margin: 0;
-    word-spacing: 2px; /* Aggiungi spazi più larghi tra le parole */
+    word-spacing: 3px; /* Aggiungi spazi più larghi tra le parole */
     
 }
 
