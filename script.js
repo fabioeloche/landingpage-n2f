@@ -239,25 +239,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const observerOptions = {
-        root: null,  // Use the viewport as the container.
-        rootMargin: '0px',
-        threshold: 0.5  // Trigger when 50% of the target is visible.
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // When video is visible, trigger the text animation
-                const expenseText = document.querySelector('.new-expense-text');
-                expenseText.style.transform = 'translateY(0)';
-                expenseText.style.opacity = '1';
-            }
-        });
-    }, observerOptions);
-
-    // Target the video container for observation
-    const videoContainer = document.querySelector('.custom-video-frame');
-    observer.observe(videoContainer);
-});
