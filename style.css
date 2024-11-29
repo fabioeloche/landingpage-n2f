@@ -1246,7 +1246,7 @@ body {
 /* Contenitore video */
 .custom-video-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
     overflow: hidden;
     border-radius: 10px; /* Rounded corners */
