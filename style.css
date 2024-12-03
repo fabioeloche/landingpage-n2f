@@ -505,7 +505,7 @@ body {
 
 .swiper-container {
     display: flex;
-    width: 90%;
+    width: 95%;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden; /* Prevent overflow */
@@ -530,7 +530,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     width: 220px;
-    height: 380px;
+    height: 480px;
     padding: 2px;
     text-align: left;
     border-radius: 10px;
@@ -571,15 +571,15 @@ body {
 
 /* Add margin for the first card */
 .first-card-margin {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* Increase left margin for the first card on mobile screens */
 @media (max-width: 768px) {
     .first-card-margin {
-        margin-left: 20px; /* Increased left margin for mobile */
-        margin-right: 20px;
+        margin-left: 40px; /* Increased left margin for mobile */
+        margin-right: 40px;
     }
 }
 
@@ -773,7 +773,7 @@ body {
 
     .swiper-slide {
         flex-shrink: 0;
-        width: 230px !important; /* Set card width */
+        width: calc((100% / 1.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
         height: 380px !important; /* Set card height */
         position: relative;
         transition: transform 0.3s ease-in-out;
@@ -922,9 +922,10 @@ body {
         font-size: 1.6rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
+    
     .swiper-slide {
         flex-shrink: 0;
-        width: 230px !important; /* Set card width */
+        width: calc((100% / 1.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
         height: 380px !important; /* Set card height */
         position: relative;
         transition: transform 0.3s ease-in-out;
