@@ -515,7 +515,7 @@ body {
 .swiper-slide {
     flex-shrink: 0;
     width: calc((100% / 2.8) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
-    height: 480px !important; /* Set card height */
+    height: 400px !important; /* Set card height */
     position: relative;
     transition: transform 0.3s ease-in-out;
     display: flex;
@@ -530,7 +530,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     width: 220px;
-    height: 480px;
+    height: 400px;
     padding: 2px;
     text-align: left;
     border-radius: 10px;
@@ -565,21 +565,21 @@ body {
     color: #fff;
     line-height: 1.2; /* Improve line spacing */
     position: absolute; /* Position relative to the card-back */
-    left: 5%; /* Small gap from the left */
+    left: 7%; /* Small gap from the left */
     right: 5%; /* Ensure text stays within the card */
 }
 
 /* Add margin for the first card */
 .first-card-margin {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Increase left margin for the first card on mobile screens */
 @media (max-width: 768px) {
     .first-card-margin {
-        margin-left: 40px; /* Increased left margin for mobile */
-        margin-right: 40px;
+        margin-left: 10px; /* Increased left margin for mobile */
+        margin-right: 10px;
     }
 }
 
@@ -767,7 +767,7 @@ body {
         /* Heading Styles */
     h1 .question{
         color: #fff;
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
@@ -787,7 +787,7 @@ body {
     }
 
     .video-section {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .pricing-container {
@@ -914,7 +914,7 @@ body {
     }
 
     .video-section {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .pricing-container {
@@ -931,13 +931,13 @@ body {
         /* Heading Styles mobile*/
     h1 .question{
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .swiper-slide {
         flex-shrink: 0;
-        width: calc((100% / 1.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
+        width: calc((100% / 1.3) - 10px) !important; /* Adjust the width calculation to fit 3.5 slides */
         height: 380px !important; /* Set card height */
         position: relative;
         transition: transform 0.3s ease-in-out;
