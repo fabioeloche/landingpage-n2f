@@ -782,7 +782,11 @@ body {
         align-items: center;
     }
 
-    video-section {
+    .card-front h2 {
+        font-size: 1.1rem;
+    }
+
+    .video-section {
         margin-top: 0px;
     }
 
@@ -909,7 +913,7 @@ body {
         margin-left: 8px; /* Match the padding */
     }
 
-    video-section {
+    .video-section {
         margin-top: 0px;
     }
 
