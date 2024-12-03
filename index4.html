@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Note Spese - N2F</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+<header>
+    <a href="#" class="logo">
+        <img src="./assets/images/Logo.png" alt="N2F Logo">
+    </a>
+    <div class="nav-links">
+        <a href="#">Login</a>
+        <span> | </span>
+        <a href="#">Contattaci</a>
+    </div>
+</header>
+
+<main class="container">
+    <div class="video-section">
+        <!-- Video Background -->
+        <video class="video-bg" autoplay loop muted>
+            <source src="./assets/video/video16.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>
+                <span class="question active" data-text="Note spese aziendali ?"></span>
+                <span class="question" data-text="Spese di trasferta ?"></span>
+                <span class="question" data-text="Rimborsi spese ?"></span>
+                <span class="question" data-text="Spese di viaggio ?"></span>
+                <span class="question" data-text="Rimborsi chilometrici ?"></span>
+                <span class="question" data-text="Rendiconti spese ?"></span>
+                <span class="question" data-text="Rimborsi ai dipendenti ?"></span>
+                <span class="question" data-text="Carte aziendali ?"></span>
+                <br>
+                <span>La soluzione è N2F</span>
+            </h1>
+
+
+
+                <!-- Structure Changee Of question-box and merge modal -->
+
+                
+                <div class="question-box">
+                    <!-- Keep the main progress bar -->
+                    <!-- <div class="progress-bar">
+                        <span class="progress-value">0%</span>
+                    </div> -->
+                
+                    <!-- Default question box view -->
+                    <div id="default-view">
+                        <h2>Seleziona il tipo di attività:</h2>
+                        <div class="buttons">
+                            <div class="option" onclick="selectOption('azienda')">
+                                <img src="./assets/images/1.png" alt="Azienda">
+                                <h3>Azienda</h3>
+                            </div>
+                            <div class="option" onclick="selectOption('ditta')">
+                                <img src="./assets/images/2.png" alt="Ditta individuale">
+                                <h3>Ditta individuale</h3>
+                            </div>
+                            <div class="option" onclick="selectOption('non_azienda')">
+                                <img src="./assets/images/3.png" alt="Non sono un'azienda">
+                                <h3>Non sono un'azienda</h3>
+                            </div>
+                        </div>
+                        <button id="next-btn" onclick="goToStep(1)">Avanti</button>
+                    </div>
+                
+                    <!-- Step 1 -->
+                    <div id="modal-step-1" class="modal-step hidden">
+                        <div class="progress-bar1"><span class="progress-value">25%</span></div>
+                        <h2 class="modal-title">Numero note spese mensili</h2>
+                        <div class="buttons">
+                            <div class="option" onclick="selectOption('0-10')">0-10</div>
+                            <div class="option" onclick="selectOption('10-49')">10-49</div>
+                            <div class="option" onclick="selectOption('50-99')">50-99</div>
+                            <div class="option" onclick="selectOption('100+')">100+</div>
+                        </div>
+                        <button id="next-btn-1" class="cta-button" onclick="goToStep(2)">Avanti</button>
+                    </div>
+                
+                    <!-- Step 2 -->
+                    <div id="modal-step-2" class="modal-step hidden">
+                        <div class="progress-bar2">
+                            <span class="progress-value">75%</span>
+                        </div>
+                        <h2 class="modal-title">Parla con i nostri esperti gratuitamente</h2>
+                        <div class="form-fields">
+                            <input type="text" placeholder="Nome">
+                            <input type="text" placeholder="Cognome">
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Numero di telefono">
+                            <input type="text" placeholder="Nome azienda">
+                        </div>
+                        <button id="next-btn-2" class="cta-button" onclick="goToStep(3)">Avanti</button>
+                    </div>
+                    <div style="clear: both; margin-top: 20px;"></div>
+                    
+                
+                    <!-- Step 3 -->
+                    <div id="modal-step-3" class="modal-step hidden">
+                        <div class="progress-bar3"><span class="progress-value">100%</span></div>
+                        <h2 class="modal-title">Grazie<br> Un nostro esperto ti contattera a breve</h2>
+                        <button id="complete-btn" class="cta-button" onclick="resetSteps()">Fatto</button>
+                    </div>
+                </div>
+                
+                
+            
+        </div>
+
+        
+       
+    </div>
+
+    <!-- New Section HTML -->
+    <section class="satisfied-users">
+        <h2>Oltre 800.000 utenti soddisfatti</h2>
+        <div class="logos-slider">
+            <div class="logos-track">
+                <img src="./assets/images/logo-1.png" alt="Logo 1">
+                <img src="./assets/images/logo-2.png" alt="Logo 2">
+                <img src="./assets/images/logo-3.png" alt="Logo 3">
+                <img src="./assets/images/logo-4.png" alt="Logo 4">
+                <img src="./assets/images/logo-6.png" alt="Logo 6">
+                <img src="./assets/images/logo-7.png" alt="Logo 7">
+                <!-- Duplicate logos for a continuous effect -->
+                <img src="./assets/images/logo-1.png" alt="Logo 1">
+                <img src="./assets/images/logo-2.png" alt="Logo 2">
+                <img src="./assets/images/logo-3.png" alt="Logo 3">
+                <img src="./assets/images/logo-4.png" alt="Logo 4">
+                <img src="./assets/images/logo-6.png" alt="Logo 6">
+                <img src="./assets/images/logo-7.png" alt="Logo 7">
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+        <div class="scrolling-text">
+            <h1 class="text gradient-text">Gestisci le note spese e i rimborsi fino a 4 volte piu velocemente</h1>
+        </div>
+     
+        
+    
+        <button class="cta-button">Parla con i nostri esperti</button>
+        <br><br>
+        <div class="custom-video-section">
+   
+            <div class="custom-video-container">
+                <iframe 
+                    class="custom-video-frame"
+                    src="./assets/video/Videoadvertising.mp4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <br><br>
+        <button class="cta-button">Parla con i nostri esperti</button>
+    </section>
+
+    <br><br>
+    <br><br>
+
+  <!-- Secondo testo: rivelazione graduale dal basso verso l'alto -->
+<div class="scrolling-expense-text">
+    <h1 class="expense-text">Scopri come automatizzare le tue note spese con N2F</h1>
+</div>
+
+<br><br>
+
+
+
+    <!-- <div class="swiper-container snapslider-overflow">
+        <div class="swiper-wrapper snapslider-scroll first-card-margin">
+             Card 1 with specific margin class -->
+            <!-- <div class="swiper-slide snapslider-card card-1"> -->
+                <!-- <h2>Scansione dei giustificativi</h2>
+            </div> -->
+            <!-- Card 2 -->
+            <!-- <div class="swiper-slide snapslider-card card-2">
+                <h2>Rimborsi chilometrici</h2>
+            </div> -->
+            <!-- Card 3 -->
+            <!-- <div class="swiper-slide snapslider-card card-3">
+                <h2>Carte aziendali</h2>
+            </div> -->
+            <!-- Card 4 -->
+            <!-- <div class="swiper-slide snapslider-card card-4">
+                <h2>Flusso approvativo</h2>
+            </div> -->
+            <!-- Card 5 -->
+            <!-- <div class="swiper-slide snapslider-card card-5">
+                <h2>Integrazione con i gestionali aziendali</h2>
+            </div>
+
+        </div> -->
+    <!-- </div> --> 
+
+   
+
+    <div class="swiper-container snapslider-overflow">
+        <div class="swiper-wrapper snapslider-scroll first-card-margin">
+            <!-- Card 1 -->
+            <div class="swiper-slide snapslider-card card-1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Scansione dei giustificativi</h2>
+                    </div>
+                    <div class="card-back">
+                       <p>
+                        Scatta una foto al tuo giustificativo e N2F estrae in meno di un secondo dati come data, importo, IVA, venditore, e dettagli specifici come mance e tasse per l’alloggio.                      
+                     </p> 
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide snapslider-card card-2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Rimborsi chilometrici</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Inserisci il punto di partenza e la destinazione direttamente sull'app e, grazie all'integrazione con Google Maps, N2F calcola automaticamente i chilometri percorsi. Il sistema applica le tariffe per chilometro definite dalla tua azienda</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide snapslider-card card-3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Carte aziendali</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Le carte aziendali N2F, accettate sia in Italia che all’estero, offrono riconciliazione automatica in tempo reale e sono perfettamente integrate con la nostra piattaforma per la gestione delle spese.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide snapslider-card card-4">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Flusso approvativo</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Personalizza i flussi di approvazione delle spese secondo le esigenze della tua azienda, garantendo conformità con le politiche interne.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="swiper-slide snapslider-card card-5">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Integrazione con i gestionali aziendali</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>N2F si integra con oltre 300 software di contabilità e payroll, facilitando la personalizzazione dei flussi di lavoro e automatizzando l’esportazione delle voci contabili.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <button class="contact-button">Parla con i nostri esperti</button>
+    <div class="bottom-margin-20">
+        <h1>Gestisci le tue trasferte senza pensieri</h1>
+    </div>
+   
+    
+    
+    <div class="pricing-container">
+        <div class="pricing-plan">
+                <h2>Business</h2>
+                <p><span>4,35 €</span> / mese</p>
+                <p>Fatturati annualmente</p>
+        </div>
+        <div class="pricing-plan">
+            <h2>Enterprise</h2>
+            <p><span>6 €</span> / mese</p>
+             <p>Fatturati annualmente</p>
+        </div>
+        <div class="pricing-plan">
+                <h2>Advanced</h2>
+                <p>Su richiesta</p>
+        </div>
+    </div>
+        <button class="contact-button">Parla con i nostri esperti</button>
+        <div class="reviews">
+            <div class="review">
+                <img src="./assets/icon/4.png" alt="Trustpilot">
+                <!-- <p>4.8 su 5</p> -->
+            </div>
+            <div class="review">
+                <img src="./assets/icon/7.png" alt="High Performer">
+                <!-- <p>Summer 2024</p> -->
+            </div>
+            <div class="review">
+                <img src="./assets/icon/5.png" alt="Capterra">
+                <!-- <p>4.7</p> -->
+            </div>
+            <div class="review">
+                <img src="./assets/icon/6.png" alt="Software Advice">
+                <!-- <p>Best Customer Support 2023</p> -->
+            </div>
+        </div>
+        <div class="social-icons">
+            <img src="./assets/icon/x-icon.png" alt="X">
+            <img src="./assets/icon/facebook-icon.png" alt="Facebook">
+            <img src="./assets/icon/youtube-icon.png" alt="YouTube">
+        </div>
+
+</main>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
