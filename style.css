@@ -767,9 +767,21 @@ body {
         /* Heading Styles */
     h1 .question{
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
+
+    .swiper-slide {
+        flex-shrink: 0;
+        width: 230px !important; /* Set card width */
+        height: 380px !important; /* Set card height */
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .pricing-container {
         flex-direction: column; /* Stack pricing plans vertically */
         align-items: center;
@@ -907,8 +919,18 @@ body {
         /* Heading Styles mobile*/
     h1 .question{
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .swiper-slide {
+        flex-shrink: 0;
+        width: 230px !important; /* Set card width */
+        height: 380px !important; /* Set card height */
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .pricing-plan {
