@@ -897,6 +897,13 @@ body {
         padding-right: 20px;
     }
 
+        /* Heading Styles mobile*/
+    h1 .question{
+        color: #fff;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
     .pricing-plan {
         width: 180px; /* Take up 90% of the screen width */
         max-width: 400px; /* Prevents cards from being too large */
