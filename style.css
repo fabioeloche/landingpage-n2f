@@ -514,7 +514,7 @@ body {
 /* Fix dimensions for each slide */
 .swiper-slide {
     flex-shrink: 0;
-    width: calc((100% / 3.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
+    width: calc((100% / 2.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
     height: 380px !important; /* Set card height */
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -571,8 +571,8 @@ body {
 
 /* Add margin for the first card */
 .first-card-margin {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Increase left margin for the first card on mobile screens */
