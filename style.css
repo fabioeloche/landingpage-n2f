@@ -782,6 +782,10 @@ body {
         align-items: center;
     }
 
+    video-section {
+        margin-top: 0px;
+    }
+
     .pricing-container {
         flex-direction: column; /* Stack pricing plans vertically */
         align-items: center;
@@ -905,6 +909,10 @@ body {
         margin-left: 8px; /* Match the padding */
     }
 
+    video-section {
+        margin-top: 0px;
+    }
+
     .pricing-container {
         gap: 10px;
     }
@@ -922,7 +930,7 @@ body {
         font-size: 1.6rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
-    
+
     .swiper-slide {
         flex-shrink: 0;
         width: calc((100% / 1.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
