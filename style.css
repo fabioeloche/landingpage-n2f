@@ -763,6 +763,13 @@ body {
 
 /* For devices with max-width: 768px */
 @media (max-width: 768px) {
+
+        /* Heading Styles */
+    h1 .question{
+        color: #fff;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
     .pricing-container {
         flex-direction: column; /* Stack pricing plans vertically */
         align-items: center;
@@ -819,7 +826,7 @@ body {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .content {
