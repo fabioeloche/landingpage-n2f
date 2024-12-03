@@ -514,7 +514,7 @@ body {
 /* Fix dimensions for each slide */
 .swiper-slide {
     flex-shrink: 0;
-    width: 230px !important; /* Set card width */
+    width: calc((100% / 3.5) - 20px) !important; /* Adjust the width calculation to fit 3.5 slides */
     height: 380px !important; /* Set card height */
     position: relative;
     transition: transform 0.3s ease-in-out;
