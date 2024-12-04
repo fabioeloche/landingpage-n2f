@@ -880,13 +880,12 @@ body {
         width: auto;
         height: 100px;
     }
-    .custom-video-section {
-        width: 100%;
-    }  
+
     /* Sezione video */
     .custom-video-section {
-        width: 100%;
         margin-top: -10px;
+        width: 100% !important;
+        
     }
 
     .custom-video-container {
@@ -1014,9 +1013,6 @@ body {
 
     .content {
         padding: 1rem;
-    }
-    .custom-video-section {
-        width: 100%;
     }
 
     .custom-video-container {
