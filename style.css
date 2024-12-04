@@ -65,7 +65,7 @@ header .nav-links {
     position: relative;
     z-index: 1;
     padding: 2rem;
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     border-radius: 10px;
     height: 100%;
@@ -81,14 +81,14 @@ header .nav-links {
     justify-content: center;
     align-items: flex-start; /* Allinea al top */
     text-align: center;
-    max-width: 80%; /* Imposta la larghezza massima al 80% */
+    max-width: 70%; /* Imposta la larghezza massima al 80% */
     margin: 0 auto; /* Centra orizzontalmente */
     padding: 20px;
 }
 
 /* Testo di base (nero) - Impostato come h1 */
 .text {
-    font-size: 2rem; /* Dimensione del testo */
+    font-size: 3rem; /* Dimensione del testo */
     line-height: 1.2; /* Altezza della riga */
     color: #ffffff;
     margin: 0;
@@ -1280,7 +1280,7 @@ body {
     transform: scale(0.3); /* Partenza al 30% */
     opacity: 0; /* Inizialmente invisibile */
     transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Animazione fluida */
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 /* Contenitore video */
