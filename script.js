@@ -90,7 +90,7 @@ function handleScrollEffect() {
         const adjustedScrollPercentage = Math.max(0, scrollPercentage - offset); // Offset per il ritardo iniziale
 
         // Moltiplicatore per desktop (2) e mobile (1.5)
-        const multiplier = window.innerWidth < 768 ? 5 : 9; // Più lento su mobile
+        const multiplier = window.innerWidth < 768 ? 6 : 10; // Più lento su mobile
         const visibleWordCount = Math.floor(adjustedScrollPercentage * words.length * multiplier); // Calcoliamo quante parole devono essere visibili
 
         // Se la sezione è visibile, inizia a mostrare le parole
@@ -98,7 +98,7 @@ function handleScrollEffect() {
             if (index < visibleWordCount) {
                 setTimeout(() => {
                     span.classList.add('visible'); // Aggiungi la classe visible per rivelare la parola
-                }, 250); // Ritardo uniforme di 200ms per entrambi i dispositivi
+                }, 350); // Ritardo uniforme di 200ms per entrambi i dispositivi
             } else {
                 span.classList.remove('visible'); // Rimuove la classe visible per nascondere la parola
             }
