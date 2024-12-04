@@ -165,7 +165,7 @@ h1 .question{
 
 h1 span {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -883,7 +883,7 @@ body {
 
     /* Sezione video */
     .custom-video-section {
-        margin-top: -10px;
+        margin-top: 0px !important;
         width: 100% !important;
         
     }
@@ -991,7 +991,7 @@ body {
         width: 30px; /* Smaller social icons */
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h1 span {
         font-size: 2rem;
@@ -1076,7 +1076,7 @@ body {
 }
 
 .satisfied-users h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -1280,7 +1280,7 @@ body {
     transform: scale(0.3); /* Partenza al 30% */
     opacity: 0; /* Inizialmente invisibile */
     transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Animazione fluida */
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 /* Contenitore video */
